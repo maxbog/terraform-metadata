@@ -208,5 +208,19 @@
   "vthunder": {},
   "vultr": {},
   "wavefront" : {},
-  "yandex": {}
+  "yandex" : {},
+  "boundary": {},
+  "confluentcloud": {},
+  "corner": {},
+  "fakewebservices": {},
+  "hcp": {},
+  "hcs": {},
+  "hellosign": {},
+  "kafka": {},
+  "kafka-connect": {},
+  "ksql": {},
+  "scaffolding-goreleaser": {
+    "skip_generation": true
+  },
+  "middesk": {}
 }
