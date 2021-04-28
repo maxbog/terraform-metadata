@@ -209,18 +209,50 @@
   "vultr": {},
   "wavefront" : {},
   "yandex" : {},
-  "boundary": {},
-  "confluentcloud": {},
-  "corner": {},
-  "fakewebservices": {},
-  "hcp": {},
-  "hcs": {},
-  "hellosign": {},
-  "kafka": {},
-  "kafka-connect": {},
-  "ksql": {},
+  "boundary": {
+    "repository": "github.com/hashicorp/terraform-provider-__NAME__",
+    "go_envs": "GO111MODULE=on"
+  },
+  "corner": {
+    "skip_generation": true
+  },
+  "fakewebservices": {
+    "repository": "github.com/hashicorp/terraform-provider-__NAME__",
+    "go_envs": "GO111MODULE=on"
+  },
+  "hcp": {
+    "repository": "github.com/hashicorp/terraform-provider-__NAME__",
+    "go_envs": "GO111MODULE=on"
+  },
+  "hcs": {
+    "repository": "github.com/hashicorp/terraform-provider-__NAME__",
+    "go_envs": "GO111MODULE=on"
+  },
+  "confluentcloud": {
+    "repository": "github.com/mongey/terraform-provider-__NAME__",
+    "go_envs": "GO111MODULE=on"
+  },
+  "hellosign": {
+    "repository": "github.com/mongey/terraform-provider-__NAME__",
+    "go_envs": "GO111MODULE=on"
+  },
+  "kafka": {
+    "repository": "github.com/mongey/terraform-provider-__NAME__",
+    "go_envs": "GO111MODULE=on"
+  },
+  "kafka-connect": {
+    "repository": "github.com/mongey/terraform-provider-__NAME__",
+    "go_envs": "GO111MODULE=on"
+  },
+  "ksql": {
+    "repository": "github.com/mongey/terraform-provider-__NAME__",
+    "go_envs": "GO111MODULE=on"
+  },
   "scaffolding-goreleaser": {
     "skip_generation": true
   },
-  "middesk": {}
+  "middesk": {
+    "repository": "github.com/mongey/terraform-provider-__NAME__",
+    "go_envs": "GO111MODULE=on"
+  }
 }
