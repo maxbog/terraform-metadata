@@ -8,7 +8,7 @@ pushd "$(dirname "$0")" >/dev/null
 get_org_repos() {
   echo "Fetching repositories from organization $1..."
   local idx=1
-  while curl -u maxbog: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 -s "https://api.github.com/orgs/$1/repos?sort=full_name&per_page=100&page=${idx}" | jq -re '.[].name' >>"$2"; do
+  while curl -s "https://api.github.com/orgs/$1/repos?sort=full_name&per_page=100&page=${idx}" | jq -re '.[].name' >>"$2"; do
     echo "Fetched page $idx"
     idx=$((idx + 1))
   done
@@ -19,7 +19,7 @@ get_org_repos() {
 get_user_repos() {
   echo "Fetching repositories from user $1..."
   local idx=1
-  while curl -u maxbog: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 -s "https://api.github.com/users/$1/repos?sort=full_name&per_page=100&page=${idx}" | jq -re '.[].name' >>"$2"; do
+  while curl -s "https://api.github.com/users/$1/repos?sort=full_name&per_page=100&page=${idx}" | jq -re '.[].name' >>"$2"; do
     echo "Fetched page $idx"
     idx=$((idx + 1))
   done
